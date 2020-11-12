@@ -4,7 +4,7 @@ module Queries
     type [Types::NoteType], null: false
 
     def resolve
-      Note.all.order(created_at: :desc)
+      Note.all.order(created_at: :asc)
     end
   end
 end
